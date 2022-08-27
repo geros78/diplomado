@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxis y estructuras de control</title>
+</head>
+<body>
+    <script>
+        document.write("<h1>Sintaxis y estructuras de control</h1>")
+        var numero1 =10;
+        let numero2 =10;
+        const PI= 3.14;
+        let mesj ="hola";
+        document.write("numero1+numero2")
+        console.log(mesj);
+        document.write("<hr>")
+        document.write("Estructuras de control <br>")
+        document.write("IF <br>")
+        if(numero1==numero2){
+            document.write("Los numeros son iguales")
+            var numero3 = 20
+            document.write(numero3)
+        }
+        
+        document.write(numero2)
+        document.write(numero1+"<br>")
+
+        if (numero1==numero2){
+            document.write("Los numeros son iguales")
+        } else {
+            document.write("Los numeros son diferentes")
+        }
+
+        document.write("<hr>")
+        document.write("Estructuras de control<br>")
+        document.write("SWITCH<br>")
+        let dia =parseInt(prompt("Escriba el numero del dia"));
+
+        switch(dia){
+            case 1:
+                document.write("El dia es lunes")
+                break;
+            case 2:
+                document.write("El dia es martes")
+                break;
+            case 3:
+                document.write("El dia es miercoles")
+                break;
+            case 4:
+                document.write("El dia es jueves")
+                break;
+            case 5:
+                document.write("El dia es viernes")
+                break;
+            default:
+                document.write("error... solo  numeros del 1 al 5")
+        }
+
+        document.write("<hr>")
+        document.write("For<br>")
+
+        for(let i = 0; i <= dia; i++){
+            document.write(dia+ "X" + i +"="+ dia*i +"<br>")
+        }
+
+        document.write("<hr>")
+        document.write("While<br>")
+
+        let x=1;
+        while (x<10){
+            document.write(x+ "<br>")
+            x++;
+        }
+
+        document.write("<hr>")
+        document.write("Vector<br>")
+        const vector=["item1","item2","item3"]
+        document.write(vector+ "<br>")
+
+
+    </script>
+    
+</body>
+</html>
